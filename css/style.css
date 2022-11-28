@@ -9,4 +9,75 @@ body {
   display: grid;
   min-height: 100vh;
   place-items: center;
+  padding: 1.5rem;
+}
+
+.icon {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+
+.hide {
+  display: none;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 2rem;
+  min-width: 33rem;
+  padding: 0 2.5rem 2rem 2.5rem;
+}
+.card__image {
+  position: relative;
+}
+.card__image picture {
+  position: absolute;
+  transform: translate(2rem, -25rem);
+  width: 23.8rem;
+}
+.card__faq {
+  border-bottom: 1px solid hsl(240deg, 5%, 91%);
+  margin-bottom: 2rem;
+}
+.card__title {
+  color: hsl(238deg, 29%, 16%);
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 3.5rem;
+  text-align: center;
+}
+.card__question-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.card__question {
+  color: hsl(237deg, 12%, 33%);
+  font-size: 1.4rem;
+}
+.card__question:hover {
+  color: hsl(14deg, 88%, 65%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card__answer {
+  color: hsl(240deg, 6%, 50%);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  max-width: 25rem;
+}
+
+.background-pattern {
+  background-image: url("../images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  height: 14rem;
 }/*# sourceMappingURL=style.css.map */
